@@ -26,9 +26,10 @@ if (token) {
     );
 }
 
-const app = new Vue({
-    el: '#app'
-});
+import Vue from 'vue';
+
+new Vue().$mount('#app');
+
 
 
 /**
