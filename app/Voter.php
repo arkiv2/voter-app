@@ -23,4 +23,9 @@ class Voter extends Model
     {
         return false;
     }
+
+    public function votingStatus()
+    {
+        return $this->belongsToMany(Status::class);
+    }
 }
