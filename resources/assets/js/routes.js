@@ -30,6 +30,21 @@ export default new VueRouter({
                     name: 'voter',
                     component: Vue.component('Voter', require('./pages/Voters/Show.vue'))
                 },
+                {
+                    path: 'candidates',
+                    name: 'candidates',
+                    component: Vue.component('Candidates', require('./pages/Candidates/Index.vue'))
+                },
+                {
+                    path: 'candidates/new',
+                    name: 'newcandidate',
+                    component: Vue.component('NewCandidate', require('./pages/Candidates/Create.vue'))
+                },
+                {
+                    path: 'candidates/:id',
+                    name: 'candidate',
+                    component: Vue.component('Candidate', require('./pages/Candidates/Show.vue'))
+                },
             ]
         },
     ]
