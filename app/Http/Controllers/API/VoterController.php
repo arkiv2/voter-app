@@ -20,6 +20,17 @@ class VoterController extends Controller
     }
 
     /**
+     * Display the form creating a Voter
+     *
+     * @return view
+     */
+    public function create()
+    {
+        $voters = Voter::all()->sortBy('last_name');
+        return view('create')->with('voters', $voters);
+    }
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

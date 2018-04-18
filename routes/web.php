@@ -15,3 +15,8 @@ Route::get('/', function () {
     return view('app');
 });
 
+Route::get('/voters/create', 'API\VoterController@create');
+
+Route::get('/auth/login', function() {
+    return view('login');
+});

@@ -7,6 +7,8 @@ use Carbon\Carbon;
 
 class Vote extends Pivot
 {
+    protected $table = 'votes';
+
     public function scopeGrouped($query)
     {
         return $query->groupBy(function($item) {

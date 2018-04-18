@@ -5,6 +5,8 @@ namespace App\Http\Controllers\API;
 use App\Vote;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Voter;
+use App\Candidate;
  
 class VoteController extends Controller
 {
@@ -19,16 +21,6 @@ class VoteController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -36,7 +28,9 @@ class VoteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $voter = Voter::findOrFail($request->voter_id);
+        $candidate = Candidate::findOrFail($request->candidate_id);
+        return $voter->vote($candidate);
     }
 
     /**

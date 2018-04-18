@@ -22,3 +22,4 @@ Route::group(['prefix' => 'v1', 'middleware' => 'auth:api'], function () {
 
 Route::apiResource('candidates', 'API\CandidateController');
 Route::apiResource('voters', 'API\VoterController');
+Route::apiResource('votes', 'API\VoteController');

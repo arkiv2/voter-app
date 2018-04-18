@@ -15,10 +15,12 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
+import { voters } from './modules/voters.js';
 import { candidates } from './modules/candidates.js';
 
 export default new Vuex.Store({
     modules: {
         candidates,
+        voters,
     }
 });

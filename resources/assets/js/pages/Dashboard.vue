@@ -5,7 +5,7 @@
 <template>
   <div id="home">
      <ul>
-        <li v-for="candidate in candidates">{{ candidate.last_name }}</li>
+        <li v-for="voter in voters">{{ voter.last_name }}</li>
     </ul>
   </div>
 </template>
@@ -13,15 +13,15 @@
 <script>
   export default {
       created() {
-          this.$store.dispatch('loadCandidates');
+          this.$store.dispatch('loadVoters');
       },
       computed: {
-          candidatesLoadStatus() {
-              return this.$store.getters.getCandidatesLoadStatus;
+          votersLoadStatus() {
+              return this.$store.getters.getVotersLoadStatus;
           },
 
-          candidates() {
-              return this.$store.getters.getCandidates.data;
+          voters() {
+              return this.$store.getters.getVoters.data;
           }
       }
   }

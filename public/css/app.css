@@ -2262,6 +2262,10 @@ button,
   border-width: 8px;
 }
 
+.border-12 {
+  border-width: 12px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2328,6 +2332,22 @@ button,
 
 .border-l-8 {
   border-left-width: 8px;
+}
+
+.border-t-12 {
+  border-top-width: 12px;
+}
+
+.border-r-12 {
+  border-right-width: 12px;
+}
+
+.border-b-12 {
+  border-bottom-width: 12px;
+}
+
+.border-l-12 {
+  border-left-width: 12px;
 }
 
 .border-t {
@@ -6421,6 +6441,10 @@ button,
     border-width: 8px;
   }
 
+  .sm\:border-12 {
+    border-width: 12px;
+  }
+
   .sm\:border {
     border-width: 1px;
   }
@@ -6487,6 +6511,22 @@ button,
 
   .sm\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .sm\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .sm\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .sm\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .sm\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .sm\:border-t {
@@ -10558,6 +10598,10 @@ button,
     border-width: 8px;
   }
 
+  .md\:border-12 {
+    border-width: 12px;
+  }
+
   .md\:border {
     border-width: 1px;
   }
@@ -10624,6 +10668,22 @@ button,
 
   .md\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .md\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .md\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .md\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .md\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .md\:border-t {
@@ -14695,6 +14755,10 @@ button,
     border-width: 8px;
   }
 
+  .lg\:border-12 {
+    border-width: 12px;
+  }
+
   .lg\:border {
     border-width: 1px;
   }
@@ -14761,6 +14825,22 @@ button,
 
   .lg\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .lg\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .lg\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .lg\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .lg\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .lg\:border-t {
@@ -18832,6 +18912,10 @@ button,
     border-width: 8px;
   }
 
+  .xl\:border-12 {
+    border-width: 12px;
+  }
+
   .xl\:border {
     border-width: 1px;
   }
@@ -18898,6 +18982,22 @@ button,
 
   .xl\:border-l-8 {
     border-left-width: 8px;
+  }
+
+  .xl\:border-t-12 {
+    border-top-width: 12px;
+  }
+
+  .xl\:border-r-12 {
+    border-right-width: 12px;
+  }
+
+  .xl\:border-b-12 {
+    border-bottom-width: 12px;
+  }
+
+  .xl\:border-l-12 {
+    border-left-width: 12px;
   }
 
   .xl\:border-t {
