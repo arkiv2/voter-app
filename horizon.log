@@ -2,3 +2,27 @@ Horizon started successfully.
 Horizon started successfully.
 Horizon started successfully.
 Horizon started successfully.
+
+   Predis\Connection\ConnectionException  : Connection refused [tcp://127.0.0.1:6379]
+
+  at /home/vagrant/code/voter/vendor/predis/predis/src/Connection/AbstractConnection.php:155
+    151|      */
+    152|     protected function onConnectionError($message, $code = null)
+    153|     {
+    154|         CommunicationException::handle(
+  > 155|             new ConnectionException($this, static::createExceptionMessage($message), $code)
+    156|         );
+    157|     }
+    158| 
+    159|     /**
+
+  Exception trace:
+
+  1   Predis\Connection\AbstractConnection::onConnectionError("Connection refused")
+      /home/vagrant/code/voter/vendor/predis/predis/src/Connection/StreamConnection.php:128
+
+  2   Predis\Connection\StreamConnection::createStreamSocket(Object(Predis\Connection\Parameters), "tcp://127.0.0.1:6379")
+      /home/vagrant/code/voter/vendor/predis/predis/src/Connection/StreamConnection.php:178
+
+  Please use the argument -v to see more details.
+Horizon started successfully.
