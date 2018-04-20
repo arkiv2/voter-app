@@ -15,8 +15,14 @@ Route::get('/', function () {
     return view('app');
 });
 
-Route::get('/voters/create', 'API\VoterController@create');
+Route::prefix('voters')->as('voters.')->group(function() {
 
-Route::get('/auth/login', function() {
-    return view('login');
+    Route::view('table', 'voter.table')->name('table');
+    Route::prefix('table')->as('table.')->group(function() {
+        Route::get('init', 'Tables\VotersTableController@init')->name('init');
+        Route::get('data', 'Tables\VotersTableController@data')->name('data');
+        Route::get('exportExcel', 'Tables\VoterTableControll@exportExcel')->name('exportExcel');
+    });
 });
+
+Route::resource('/dashboard', 'DashboardController');

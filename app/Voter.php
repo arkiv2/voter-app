@@ -14,6 +14,8 @@ class Voter extends Model
 
     protected $fillable = ['first_name', 'last_name', 'zone', 'precint_number'];
 
+    protected $casts = ['acquired' => 'boolean'];
+
     public function status()
     {
         return !! $this->acquired;

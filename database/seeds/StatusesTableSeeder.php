@@ -13,11 +13,11 @@ class StatusesTableSeeder extends Seeder
     {
 
         DB::table('statuses')->insert([
-            'name' => 'NON-STRAIGHT',
+            'status' => 'NON-STRAIGHT',
         ]);
 
         DB::table('statuses')->insert([
-            'name' => 'STRAIGHT',
+            'status' => 'STRAIGHT',
         ]);
     }
 }

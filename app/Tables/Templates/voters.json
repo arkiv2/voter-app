@@ -1,0 +1,109 @@
+{
+    "routePrefix": "voters.table",
+    "readSuffix": "data",
+    "writeSuffix": null,
+    "name": "Voters Table",
+    "icon": [
+        "fab",
+        "vuejs"
+    ],
+    "crtNo": true,
+    "buttons": [
+        {
+            "type": "global",
+            "icon": "file-excel",
+            "class": "is-outlined",
+            "event": "excel",
+            "label": "Excel"
+        },
+        {
+            "type": "global",
+            "icon": "plus",
+            "class": "is-success",
+            "event": "create",
+            "label": "Create"
+        },
+        {
+            "type": "row",
+            "icon": "pencil-alt",
+            "class": "is-warning",
+            "event": "edit"
+        },
+        {
+            "type": "row",
+            "icon": "trash-alt",
+            "class": "is-danger",
+            "event": "destroy",
+            "confirmation": true,
+            "message": "This is your custom confirmation. Are you sure?"
+        }
+    ],
+    "columns": [
+        {
+            "label": "First Name",
+            "name": "first_name",
+            "data": "voters.first_name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Last Name",
+            "name": "last_name",
+            "data": "voters.last_name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Source",
+            "name": "source_type",
+            "data": "voters.source_type",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Source ID",
+            "name": "source_id",
+            "data": "voters.source_id",
+            "meta": [
+                "searchable",
+                "sortable",
+                "clickable"
+            ]
+        },
+        {
+            "label": "Precint Number",
+            "name": "precint_number",
+            "data": "voters.precint_number",
+            "meta": [
+                "searchable",
+                "sortable",
+                "slot"
+            ]
+        },
+        {
+            "label": "Zone",
+            "name": "zone",
+            "data": "voters.zone",
+            "meta": [
+                "searchable",
+                "sortable",
+                "clickable"
+            ]
+        },
+        {
+            "label": "Acquired",
+            "name": "acquired",
+            "data": "voters.acquired",
+            "meta": [
+                "boolean",
+                "sortable"
+            ]
+        }
+    ]
+}
